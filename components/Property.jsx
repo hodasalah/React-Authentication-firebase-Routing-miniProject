@@ -32,9 +32,10 @@ const Property = ({
 				paddingTop="0px"
 				justifyContent="flex-start"
 				cursor="pointer"
-				backgroundColor="gray.500"
-				border='1px' borderColor='gray.200'
->
+				backgroundColor="gray.50"
+				border="1px"
+				borderColor="gray.200"
+			>
 				<Box>
 					<Image
 						src={coverPhoto ? coverPhoto.url : DefaultImage}
