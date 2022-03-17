@@ -1,3 +1,21 @@
+import Link from "next/link";
+import {
+	Menu,
+	MenuButton,
+	MenuList,
+	MenuItem,
+	IconButton,
+	Flex,
+	Box,
+	Spacer,
+} from "@chakra-ui/react";
+import { FcHome, FcAbout, FcMenu } from "react-icons/fc";
+import { BsSearch } from "react-icons/bs";
+import { FiKey } from "react-icons/fi";
+
+const Navbar = () => {
+	return (
+		<Flex p={2} borderBottom={"1px"} borderColor="gray.100">
 			<Box fontSize={"3xl"} color="blue.400" fontWeight={"bold"}>
 				<Link href="/" paddingLeft="2">
 					RealEstate
@@ -27,9 +45,7 @@
 
 						{/* search for rent */}
 						<Link href="/search?purpose=for-rent" passHref>
-							<MenuItem color="blue.400" icon={<FiKey />}>
-								Rent Property
-							</MenuItem>
+							<MenuItem icon={<FiKey />}>Rent Property</MenuItem>
 						</Link>
 					</MenuList>
 				</Menu>
