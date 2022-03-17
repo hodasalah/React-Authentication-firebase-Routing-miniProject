@@ -4,7 +4,7 @@ import { MdCancel } from "react-icons/md";
 import Image from "next/image";
 
 import {
-	flex,
+	Flex,
 	Box,
 	Select,
 	Text,
@@ -15,7 +15,10 @@ import {
 } from "@chakra-ui/react";
 
 const SearchFilters = () => {
-	return <div>SearchFilters</div>;
+	const [filters, setFilters] = useState({});
+	return (
+		<Flex jutifyContent="center" bg="gray.100" p="4" flexWrap="wrap"></Flex>
+	);
 };
 
 export default SearchFilters;
