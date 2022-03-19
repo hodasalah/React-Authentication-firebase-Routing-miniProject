@@ -28,7 +28,7 @@ const Property = ({
 			<Flex
 				flexWrap="wrap"
 				w="300px"
-				m="5"
+				m="2"
 				paddingTop="0px"
 				justifyContent="flex-start"
 				cursor="pointer"

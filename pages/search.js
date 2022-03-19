@@ -11,7 +11,7 @@ import { baseURL, fetchApi } from "../utils/fetchApi";
 const Search = ({ properties }) => {
 	const [searchFilter, setSearchFilter] = useState(false);
 	const router = useRouter();
-	console.log(router);
+
 	return (
 		<Box>
 			<Flex
@@ -66,7 +66,7 @@ export async function getServerSideProps({ query }) {
 	const bathsMin = query.bathsMin || "0";
 	const sort = query.sort || "price-desc";
 	const areaMax = query.areaMax || "35000";
-	const locationExternalIDs = query.locationExternalIDs || "5002";
+	const locationExternalIDs = query.locationExternalIDs || "5002,6020";
 	const categoryExternalID = query.categoryExternalID || "4";
 
 	const data = await fetchApi(
