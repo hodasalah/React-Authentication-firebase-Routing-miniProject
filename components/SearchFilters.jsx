@@ -31,12 +31,12 @@ const SearchFilters = () => {
 		const { query } = router;
 		const values = getFilterValues(filterValues);
 		values.forEach((item) => {
-			query[item.name] = item.value;
-			console.log((query[item.name] = item.value));
+			if (item.value && filterValues?.[item.name]) {
+				query[item.name] = item.value;
+			}
 		});
 
 		router.push({ pathname: path, query });
-		console.log(router);
 	};
 	/** get location data */
 	useEffect(() => {
